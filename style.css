@@ -6,13 +6,12 @@
 body {
   color: rgb(39, 35, 35);
   font-family: Times, serif;
-
 }
-a{
+a {
   text-decoration: none;
   color: rgb(133, 119, 119);
 }
-button{
+button {
   border: none;
   cursor: pointer;
 }
@@ -30,12 +29,12 @@ nav {
   padding: 10px;
   z-index: 11111111111;
 }
-nav a img{
+nav a img {
   width: 25px;
 }
-.youtube-logo{
+.youtube-logo {
   width: 80px;
-  height:68px ;
+  height: 68px;
 }
 .home-menu {
   width: 180px;
@@ -51,7 +50,6 @@ nav a img{
   flex-grow: 0.2;
 }
 nav form {
-  
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -115,6 +113,38 @@ nav button {
     ". comments aside .";
   grid-gap: 1rem;
 }
+/* aside */
+#sideBar {
+  width: 15vw;
+  margin-top: 10vh;
+  font-size: 1.2rem;
+  visibility: hidden;
+}
+.sidebar-menu {
+  width: 100%;
+  /* background-color: #c00; */
+  /* border: 1px solid yellow; */
+  text-align: justify;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  /* margin: auto; */
+  cursor: pointer;
+}
+.sidebar-menu:hover {
+  background-color: rgb(213, 213, 213);
+}
+#sidebar-icon i {
+  margin-right: 10px;
+}
+#show-more {
+  cursor: pointer;
+}
+#show-more:hover {
+  background-color: rgb(173, 174, 175);
+}
+i{
+  padding-right: 8px;
+}
 /* main */
 
 main {
@@ -134,7 +164,8 @@ main iframe {
 #Mvideo-impressions {
   display: flex;
   justify-content: space-between;
-align-items: center;}
+  align-items: center;
+}
 .impressions {
   display: flex;
   justify-content: space-around;
@@ -151,9 +182,15 @@ align-items: center;}
   flex-wrap: nowrap;
   font-size: 17px;
 }
-
-
-
+#video-card{
+  width: 50vw;
+  height: 40vh;
+}
+#interface {
+  font-display: flex;
+  flex-direction: row;
+  
+}
 /* aside */
 aside {
   grid-area: aside;
@@ -222,8 +259,9 @@ article {
   margin: 0 10px;
 }
 #description {
-position: absolute;
-left: 13%;}
+  position: absolute;
+  left: 13%;
+}
 
 #tags {
   grid-area: tags;
@@ -256,9 +294,8 @@ left: 13%;}
   position: relative;
   font-size: 20px;
   cursor: pointer;
-
 }
-.sort{
+.sort {
   position: absolute;
   left: 20%;
   top: 0;
@@ -269,16 +306,16 @@ left: 13%;}
 #comments img {
   width: 30px;
 }
-.user-comment{
+.user-comment {
   display: flex;
 }
-#comments p{
-color: gray;
-padding: 15px;
-margin-top: 10px;
-cursor: default;
+#comments p {
+  color: gray;
+  padding: 15px;
+  margin-top: 10px;
+  cursor: default;
 }
-#comments hr{
+#comments hr {
   width: 90%;
   border: hidden;
   border-bottom: 1px solid gray;
@@ -286,7 +323,7 @@ cursor: default;
 }
 
 @media only screen and (max-width: 800px) {
-  nav{
+  nav {
     width: 100%;
   }
   #container {
@@ -305,16 +342,16 @@ cursor: default;
   main iframe {
     width: 700px;
   }
-  article{
+  article {
     border-bottom: 1px solid gray;
   }
-  #tags{
+  #tags {
     border-bottom: 1px solid gray;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  nav{
+  nav {
     width: 100%;
   }
   #container {
@@ -333,10 +370,10 @@ cursor: default;
   main iframe {
     width: 550px;
   }
-  article{
+  article {
     border-bottom: 1px solid gray;
   }
-  #tags{
+  #tags {
     border-bottom: 1px solid gray;
   }
 }
